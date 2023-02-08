@@ -7,7 +7,7 @@
 <br/>
 	{% for thing in pages %}
 		<strong>{{ thing.question }}</strong><br/>
-		{{ thing.answer }} <br/>
+		{{ thing.answer|linebreaks }} <br/>
 		<a href="{% url 'delete_past' thing.id %}" class="btn btn-outline-secondary btn-sm"> Delete</a>
 
 
